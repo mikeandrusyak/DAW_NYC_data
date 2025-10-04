@@ -3,3 +3,4 @@ data
 .venv
 .ipynb_checkpoints/
 mydb.duckdb
+__pycache__/

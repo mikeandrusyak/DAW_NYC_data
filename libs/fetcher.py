@@ -43,7 +43,7 @@ def fetch_random_sample(
         logging.error(f"Error fetching random sample for {group_by}={group_value} between {time_start} and {time_end}: {e}")
         return None
 
-    # Lokales Zufallssample ziehen
+    # Take local random sample
     if len(df) > sample_size:
         df = df.sample(n=sample_size, random_state=random.randint(0, 9999))
 
@@ -65,7 +65,7 @@ def fetch_all_samples_from_plan(
         group_value = row[group_by]
         n = int(row["sample_size"])
 
-        print(f"📥 Lade {n} Zeilen für {group_by} = '{group_value}' ...")
+        print(f"📥 Loading {n} rows for {group_by} = '{group_value}' ...")
 
         try:
             df_sample = fetch_random_sample(
@@ -78,14 +78,14 @@ def fetch_all_samples_from_plan(
                 sample_size=n
             )
 
-            df_sample[group_by] = group_value  # Sicherheit, falls Spalte fehlt
+            df_sample[group_by] = group_value  # Safety: ensure column exists
             all_samples.append(df_sample)
 
-            print(f"{len(df_sample)} Zeilen geladen.")
+            print(f"{len(df_sample)} rows loaded.")
         except Exception as e:
-            print(f"Fehler bei {group_value}: {e}")
+            print(f"Error with {group_value}: {e}")
 
-        time.sleep(sleep_seconds)  # kleine Pause, um API-Rate-Limit zu vermeiden
+        time.sleep(sleep_seconds)  # small pause to avoid API rate limit
 
     if not all_samples:
         return pd.DataFrame()
