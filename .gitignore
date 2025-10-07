@@ -1,2 +1,6 @@
 data
 .DS_Store
+.venv
+.ipynb_checkpoints/
+mydb.duckdb
+__pycache__/
