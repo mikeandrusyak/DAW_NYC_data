@@ -1,0 +1,440 @@
+{
+    "Bronx": [
+        {
+            "uhf_code": 101,
+            "neighborhood": "Kingsbridge - Riverdale",
+            "zip_codes": [
+                "10463",
+                "10471"
+            ]
+        },
+        {
+            "uhf_code": 102,
+            "neighborhood": "Northeast Bronx",
+            "zip_codes": [
+                "10466",
+                "10469",
+                "10470",
+                "10475"
+            ]
+        },
+        {
+            "uhf_code": 103,
+            "neighborhood": "Fordham - Bronx Park",
+            "zip_codes": [
+                "10458",
+                "10467",
+                "10468"
+            ]
+        },
+        {
+            "uhf_code": 104,
+            "neighborhood": "Pelham - Throgs Neck",
+            "zip_codes": [
+                "10461",
+                "10462",
+                "10464",
+                "10465",
+                "10472",
+                "10473"
+            ]
+        },
+        {
+            "uhf_code": 105,
+            "neighborhood": "Crotona - Tremont",
+            "zip_codes": [
+                "10453",
+                "10457",
+                "10460"
+            ]
+        },
+        {
+            "uhf_code": 106,
+            "neighborhood": "High Bridge - Morrisania",
+            "zip_codes": [
+                "10451",
+                "10452",
+                "10456"
+            ]
+        },
+        {
+            "uhf_code": 107,
+            "neighborhood": "Hunts Point - Mott Haven",
+            "zip_codes": [
+                "10454",
+                "10455",
+                "10459",
+                "10474"
+            ]
+        }
+    ],
+    "Brooklyn": [
+        {
+            "uhf_code": 201,
+            "neighborhood": "Greenpoint",
+            "zip_codes": [
+                "11211",
+                "11222"
+            ]
+        },
+        {
+            "uhf_code": 202,
+            "neighborhood": "Downtown - Heights - Park Slope",
+            "zip_codes": [
+                "11201",
+                "11205",
+                "11215",
+                "11217",
+                "11231"
+            ]
+        },
+        {
+            "uhf_code": 203,
+            "neighborhood": "Bedford Stuyvesant - Crown Heights",
+            "zip_codes": [
+                "11213",
+                "11212",
+                "11216",
+                "11233",
+                "11238"
+            ]
+        },
+        {
+            "uhf_code": 204,
+            "neighborhood": "East New York",
+            "zip_codes": [
+                "11207",
+                "11208"
+            ]
+        },
+        {
+            "uhf_code": 205,
+            "neighborhood": "Sunset Park",
+            "zip_codes": [
+                "11220",
+                "11232"
+            ]
+        },
+        {
+            "uhf_code": 206,
+            "neighborhood": "Borough Park",
+            "zip_codes": [
+                "11204",
+                "11218",
+                "11219",
+                "11230"
+            ]
+        },
+        {
+            "uhf_code": 207,
+            "neighborhood": "East Flatbush - Flatbush",
+            "zip_codes": [
+                "11203",
+                "11210",
+                "11225",
+                "11226"
+            ]
+        },
+        {
+            "uhf_code": 208,
+            "neighborhood": "Canarsie - Flatlands",
+            "zip_codes": [
+                "11234",
+                "11236",
+                "11239"
+            ]
+        },
+        {
+            "uhf_code": 209,
+            "neighborhood": "Bensonhurst - Bay Ridge",
+            "zip_codes": [
+                "11209",
+                "11214",
+                "11228"
+            ]
+        },
+        {
+            "uhf_code": 210,
+            "neighborhood": "Coney Island - Sheepshead Bay",
+            "zip_codes": [
+                "11223",
+                "11224",
+                "11229",
+                "11235"
+            ]
+        },
+        {
+            "uhf_code": 211,
+            "neighborhood": "Williamsburg - Bushwick",
+            "zip_codes": [
+                "11206",
+                "11221",
+                "11237"
+            ]
+        }
+    ],
+    "Manhattan": [
+        {
+            "uhf_code": 301,
+            "neighborhood": "Washington Heights - Inwood",
+            "zip_codes": [
+                "10031",
+                "10032",
+                "10033",
+                "10034",
+                "10040"
+            ]
+        },
+        {
+            "uhf_code": 302,
+            "neighborhood": "Central Harlem - Morningside Heights",
+            "zip_codes": [
+                "10026",
+                "10027",
+                "10030",
+                "10037",
+                "10039"
+            ]
+        },
+        {
+            "uhf_code": 303,
+            "neighborhood": "East Harlem",
+            "zip_codes": [
+                "10029",
+                "10035"
+            ]
+        },
+        {
+            "uhf_code": 304,
+            "neighborhood": "Upper West Side",
+            "zip_codes": [
+                "10023",
+                "10024",
+                "10025"
+            ]
+        },
+        {
+            "uhf_code": 305,
+            "neighborhood": "Upper East Side",
+            "zip_codes": [
+                "10021",
+                "10028",
+                "10044",
+                "10128"
+            ]
+        },
+        {
+            "uhf_code": 306,
+            "neighborhood": "Chelsea - Clinton",
+            "zip_codes": [
+                "10001",
+                "10011",
+                "10018",
+                "10019",
+                "10020",
+                "10036"
+            ]
+        },
+        {
+            "uhf_code": 307,
+            "neighborhood": "Gramercy Park - Murray Hill",
+            "zip_codes": [
+                "10010",
+                "10016",
+                "10017",
+                "10022"
+            ]
+        },
+        {
+            "uhf_code": 308,
+            "neighborhood": "Greenwich Village - SoHo",
+            "zip_codes": [
+                "10012",
+                "10013",
+                "10014"
+            ]
+        },
+        {
+            "uhf_code": 309,
+            "neighborhood": "Union Square - Lower East Side",
+            "zip_codes": [
+                "10002",
+                "10003",
+                "10009"
+            ]
+        },
+        {
+            "uhf_code": 310,
+            "neighborhood": "Lower Manhattan",
+            "zip_codes": [
+                "10004",
+                "10005",
+                "10006",
+                "10007",
+                "10038",
+                "10280"
+            ]
+        }
+    ],
+    "Queens": [
+        {
+            "uhf_code": 401,
+            "neighborhood": "Long Island City - Astoria",
+            "zip_codes": [
+                "11101",
+                "11102",
+                "11103",
+                "11104",
+                "11105",
+                "11106"
+            ]
+        },
+        {
+            "uhf_code": 402,
+            "neighborhood": "West Queens",
+            "zip_codes": [
+                "11368",
+                "11369",
+                "11370",
+                "11372",
+                "11373",
+                "11377",
+                "11378"
+            ]
+        },
+        {
+            "uhf_code": 403,
+            "neighborhood": "Flushing - Clearview",
+            "zip_codes": [
+                "11354",
+                "11355",
+                "11356",
+                "11357",
+                "11358",
+                "11359",
+                "11360"
+            ]
+        },
+        {
+            "uhf_code": 404,
+            "neighborhood": "Bayside - Little Neck",
+            "zip_codes": [
+                "11361",
+                "11362",
+                "11363",
+                "11364"
+            ]
+        },
+        {
+            "uhf_code": 405,
+            "neighborhood": "Ridgewood - Forest Hills",
+            "zip_codes": [
+                "11374",
+                "11375",
+                "11379",
+                "11385"
+            ]
+        },
+        {
+            "uhf_code": 406,
+            "neighborhood": "Fresh Meadows",
+            "zip_codes": [
+                "11365",
+                "11366",
+                "11367"
+            ]
+        },
+        {
+            "uhf_code": 407,
+            "neighborhood": "Southwest Queens",
+            "zip_codes": [
+                "11414",
+                "11415",
+                "11416",
+                "11417",
+                "11418",
+                "11419",
+                "11420",
+                "11421"
+            ]
+        },
+        {
+            "uhf_code": 408,
+            "neighborhood": "Jamaica",
+            "zip_codes": [
+                "11412",
+                "11423",
+                "11432",
+                "11433",
+                "11434",
+                "11435",
+                "11436"
+            ]
+        },
+        {
+            "uhf_code": 409,
+            "neighborhood": "Southeast Queens",
+            "zip_codes": [
+                "11404",
+                "11405",
+                "11411",
+                "11413",
+                "11422",
+                "11426",
+                "11427",
+                "11428",
+                "11429"
+            ]
+        },
+        {
+            "uhf_code": 410,
+            "neighborhood": "Rockaway",
+            "zip_codes": [
+                "11691",
+                "11692",
+                "11693",
+                "11694",
+                "11695",
+                "11697"
+            ]
+        }
+    ],
+    "Staten Island": [
+        {
+            "uhf_code": 501,
+            "neighborhood": "Port Richmond",
+            "zip_codes": [
+                "10302",
+                "10303",
+                "10310"
+            ]
+        },
+        {
+            "uhf_code": 502,
+            "neighborhood": "Stapleton - St. George",
+            "zip_codes": [
+                "10301",
+                "10304",
+                "10305"
+            ]
+        },
+        {
+            "uhf_code": 503,
+            "neighborhood": "Willowbrook",
+            "zip_codes": [
+                "10314"
+            ]
+        },
+        {
+            "uhf_code": 504,
+            "neighborhood": "South Beach - Tottenville",
+            "zip_codes": [
+                "10306",
+                "10307",
+                "10308",
+                "10309",
+                "10312"
+            ]
+        }
+    ]
+}
