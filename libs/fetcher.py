@@ -67,7 +67,7 @@ def fetch_all_samples_from_plan(
 
         print(f"📥 Loading {n} rows for {group_by} = '{group_value}' ...")
 
-        try:
+        try: 
             df_sample = fetch_random_sample(
                 url=BASE_URL,
                 selectors=selectors,
