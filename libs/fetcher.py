@@ -3,6 +3,7 @@ import pandas as pd
 import logging 
 import random
 import time
+from datetime import datetime
 from io import StringIO
 
 
@@ -17,9 +18,13 @@ def fetch_random_sample(
     sample_size: int,
     multiplier: int = 2
 ) -> pd.DataFrame:
+    
     logging.info(f"Fetching random sample of {sample_size} for {group_by}={group_value} between {time_start} and {time_end}")
     limit = sample_size * multiplier
+
     offset = random.randint(0, 10_000)
+    order_dir = random.choice(["ASC", "DESC"])
+
 
     where_clause = (
         f"created_date between '{time_start}' and '{time_end}' "
@@ -31,7 +36,7 @@ def fetch_random_sample(
         "$where": where_clause,
         "$limit": limit,
         "$offset": offset,
-        "$order": "unique_key ASC"
+        "$order": f"created_date {order_dir}"
     }
     
     # API Call with Error Handling
@@ -109,3 +114,4 @@ def fetch_count_of_grouping(url: str, group_by: str, time_start: str, time_end: 
             f"Error fetching count of grouping {group_by} between {time_start} and {time_end}: {e}"
         )
         return None
+    
