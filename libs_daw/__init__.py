@@ -1,8 +1,7 @@
 """
-NYC Data Wrangling Library (libs_daw) - Simplified Version
+NYC Data Wrangling Library (libs_daw)
 
-Simplified library for step-by-step usage of the NYC data processing pipeline.
-Contains only the functionality required for Method 2 (step-by-step pipeline).
+Library for step-by-step usage of the NYC data processing pipeline.
 """
 
 from .pipeline import NYCDataPipeline
