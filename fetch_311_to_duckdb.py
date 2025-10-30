@@ -73,9 +73,9 @@ def http_get_csv(url: str, headers: Optional[Dict[str, str]] = None) -> bytes:
     if headers is None:
         headers = {}
     
-    max_retries = 7  # Збільшено з 5 до 7
-    base_delay = 2.0  # Збільшено з 1.0 до 2.0
-    timeout = 60  # Збільшено з 30 до 60 секунд
+    max_retries = 7  # Increased from 5 to 7
+    base_delay = 2.0  # Increased from 1.0 to 2.0
+    timeout = 60  # Increased from 30 to 60 seconds
     
     for attempt in range(max_retries):
         try:
@@ -426,7 +426,7 @@ def main():
             offset += args.limit
             page_num += 1
             
-            # Small delay to be respectful to API - збільшено для стабільності
+            # Small delay to be respectful to API - increased for stability
             time.sleep(0.8)
             
         except Exception as e:
