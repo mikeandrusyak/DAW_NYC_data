@@ -1,1 +1,1 @@
-from .distribution import test_imported_data_distribution
+from .distribution import test_imported_data_distribution_light
