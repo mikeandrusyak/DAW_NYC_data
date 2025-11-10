@@ -4,6 +4,7 @@ import logging
 import random
 import time
 from io import StringIO
+from itertools import chain
 
 
 def calc_k_days(start: str, end: str, k_days: int):
@@ -66,3 +67,24 @@ def fetch_month_strat_data(
         return pd.DataFrame()
     df = pd.concat(parts, ignore_index=True).drop_duplicates()
     return df
+
+def get_dataset_stratified(months, SETTINGS, SELECT_COLUMNS):
+    data_frames = []
+    for start, end in chain.from_iterable(months):
+        for borough in SETTINGS.GROUP_BY_VALUE:
+            df_311_calls = fetch_month_strat_data(
+                    BASE_URL=SETTINGS.BASE_URL,
+                    MAX_TIMEOUT=SETTINGS.TIMEOUT,
+                    selectors=SELECT_COLUMNS,
+                    group_by=SETTINGS.GROUP_BY,
+                    group_by_value=borough,
+                    target=SETTINGS.TARGET_SAMPLE,
+                    start=start,
+                    end=end,
+                    k_days=SETTINGS.DAYS_IN_MONTH,
+                    per_day_mult=1.4,
+                    sleep_seconds=SETTINGS.SLEEP_FOR_SECONDS
+            )
+            data_frames.append(df_311_calls)
+    df_all_calls = pd.concat(data_frames, ignore_index=True)
+    return df_all_calls

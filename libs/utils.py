@@ -1,5 +1,7 @@
 from sodapy import Socrata
 from datetime import datetime, timedelta
+import logging
+
 
 # Generates the quarterly data ranges for given years
 def generate_quarters(start_year, end_year) -> list:
@@ -28,3 +30,10 @@ def month_ranges(start_ymd: str, end_ymd: str):
 # Creates the Socrata client to fetch data from NYC Open Data 
 def create_client(BASE_URL: str) -> Socrata:
     return Socrata(BASE_URL, None, timeout=60) 
+
+def generate_month_ranges(quarters):
+    months = []
+    for start, end in quarters:
+        months.append(month_ranges(start, end))
+        logging.info(f"Quarter from {start} to {end}")
+    return months 
