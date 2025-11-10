@@ -1,6 +1,6 @@
 import pandas as pd 
 import numpy as np
-from scipy.stats import chisquare
+import matplotlib.pyplot as plt
 
 
 def gini_from_counts(counts: pd.Series) -> float:
@@ -67,3 +67,14 @@ def test_imported_data_distribution_light(
             problems.append(f"{month}: {', '.join(msgs)}")
 
     assert  len(problems) <= 6, "Non-uniform monthly sampling:\n  - " + "\n  - ".join(problems)
+
+def plot_distribution(group, month): 
+    counts = group['create_day'].value_counts().sort_index()
+    # Test of the distribution
+    plt.figure(figsize=(8,3))
+    counts.plot(kind='bar')
+    plt.title(f"Distribution per day – {month}")
+    plt.xlabel("Day of month")
+    plt.ylabel("Count")
+    plt.tight_layout()
+    plt.show()
